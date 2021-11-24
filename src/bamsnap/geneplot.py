@@ -77,6 +77,8 @@ class TranscriptAnnot():
 
 class GenePlot():
     def __init__(self, chrom, spos, epos, xscale, w, refversion="hg38", show_transcript = True):
+        if '.fa' in chrom:
+            chrom = chrom.split('.fa')[0]
         self.chrom = chrom
         self.nchrom = chrom.replace('chr', '')
         self.spos = spos
