@@ -564,6 +564,8 @@ class ReferenceSequence():
         seqver = self.opt['refversion']
         if not pos1['chrom'].startswith('chr'):
             chrom = 'chr' + pos1['chrom']
+        elif '.fa' in chrom:
+            chrom = chrom.split('.fa')[0]
         else:
             chrom = pos1['chrom']
         url = "http://genome.ucsc.edu/cgi-bin/das/" + seqver + \
