@@ -564,7 +564,7 @@ class ReferenceSequence():
         seqver = self.opt['refversion']
         if not pos1['chrom'].startswith('chr'):
             chrom = 'chr' + pos1['chrom']
-        elif '.fa' in chrom:
+        elif '.fa' in pos1['chrom']:
             chrom = chrom.split('.fa')[0]
         else:
             chrom = pos1['chrom']
