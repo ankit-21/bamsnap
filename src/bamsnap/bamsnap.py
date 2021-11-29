@@ -119,7 +119,7 @@ class BamSnap():
                     '"><span data-feather="file-text"></span>'+pos1['chrom']+':'+str(pos1['t_pos'])+'</a></li>'
                 # h3 += '<a name="'+t1+'"></a><div class="ic" id="s20_63231_T_G"><div class="text-block"><span class="it">'+t1+'</span><span class="badge badge-secondary gt">GT 0|0</span><span class="badge badge-secondary gt">DP 3</span></div><img src="./HG01468/20:63231.png" alt="'+t1+'" style="width:100%;"></div>'
                 img_list += '<a name="'+vid2+'"></a><div class="ic" id="s'+vid2+'"><div class="text-block"><span class="it">'+vid + \
-                    '</span></div><img src="./self.opt['out']/bamsnap_images/' + \
+                    '</span></div><img src="./bamsnap_images/' + \
                     bam.title.replace(' ', '_')+'_'+vid+'.png" alt="'+vid+'" style="width:100%;"></div>'
             d2['ALL'] = all_tab
             d2['IMGLIST'] = img_list
@@ -151,7 +151,7 @@ class BamSnap():
                 all_tab += '<span data-feather="file-text"></span>'+sid+'</a></li>'
                 # img_list += '<a name="'+sid+'"></a><div class="ic" id="s'+sid+'"><div class="text-block"><span class="it">'+sid+'</span><span class="badge badge-warning gt">GT 0|1</span><span class="badge badge-warning gt">DP 53</span></div><img src="../bamsnap_images/'+sid2+'_'+vid+'.png" alt="'+sid+'" style="width:100%;"></div>'
                 img_list += '<a name="'+sid+'"></a><div class="ic" id="s'+sid+'"><div class="text-block"><span class="it">' + \
-                    sid+'</span></div><img src="./self.opt['out']/bamsnap_images/'+sid2+'_'+vid+'.png" alt="'+sid+'" style="width:100%;"></div>'
+                    sid+'</span></div><img src="./bamsnap_images/'+sid2+'_'+vid+'.png" alt="'+sid+'" style="width:100%;"></div>'
 
             d2['ALL'] = all_tab
             d2['IMGLIST'] = img_list
